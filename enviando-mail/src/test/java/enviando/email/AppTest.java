@@ -14,7 +14,7 @@ import javax.mail.internet.MimeMessage;
 public class AppTest {
 	
 	private String userName = "samuelmarquesjavaweb@gmail.com";
-	private String senha = "nqnw smkx pxbh cquw";
+	private String senha = "lory fxmq ebwf oeyi";
 
 	@org.junit.Test
 	public void testeEmail() {
@@ -36,7 +36,7 @@ public class AppTest {
 			}		
 		});
 		
-		Address[] toUser = InternetAddress.parse("samuelmarquesjavaweb@gmail.com,samueljks692@gmail.com");
+		Address[] toUser = InternetAddress.parse("samuelmarquesjavaweb@gmail.com");
 		
 		Message message = new MimeMessage(session);
 		message.setFrom(new InternetAddress(userName));/*Quem esta enviando*/
@@ -44,7 +44,7 @@ public class AppTest {
 		message.setSubject("Chegou um email enviado com java");/*Assunto do email*/
 		message.setText("Olá programador, você acaba de receber um email enviado com o Java do curso formação Java Web do Alex");
 		
-		
+	
 		Transport.send(message);
 		
 		}catch (Exception e) {
